@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(https://i.pinimg.com/236x/2e/88/03/2e880308f38f55afe849746b4283034c.jpg);
+}
+
+.analog-clock {
+    display: flex;
+    width: 350px;
+    height: 350px;
+    justify-content: center;
+    align-items: center;
+    background: url(https://images-na.ssl-images-amazon.com/images/I/71TUQWSNedL._SL1500_.jpg);
+    background-size: cover;
+    border: 4px solid   #000033;
+    border-radius: 10%;
+    box-shadow:   19px 19px 38px    #423f3f;
+                 
+  }
+
+.analog-clock:before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: #8c0b0b;
+    border-radius: 40%;
+    z-index: 999;
+}
+
+.analog-clock .hours,
+.analog-clock .minutes,
+.analog-clock .seconds {
+    position: absolute;
+}
+
+.analog-clock .hours, .hr{
+    width: 160px;
+    height: 160px;
+}
+
+.analog-clock .minutes, .mn {
+    width: 190px;
+    height: 190px;
+}
+
+.analog-clock .seconds, .sc {
+    width: 230px;
+    height: 230px;
+}
+
+.hr, .mn, .sc {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.hr:before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 80px;
+    background: #030303;
+    z-index: 9;
+    border-radius: 8px 8px 0 0;
+}
+
+.mn:before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 90px;
+    background: #030303;
+    z-index: 10;
+    border-radius: 6px 6px 0 0;
+}
+
+.sc:before {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 150px;
+    background: #f00;
+    z-index: 11;
+    border-radius: 6px 6px 0 0;
+}
+
+footer {
+    background-color: #555;
+    color: #fff;
+    font-size: 14px;
+    bottom: 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 999;
+}
+
+footer p {
+    margin: 10px 0;
+    font-family: sans-serif;
+}
+
+footer a {
+    color: Red;
+    text-decoration: none;
+    margin-right:5px;
+}
